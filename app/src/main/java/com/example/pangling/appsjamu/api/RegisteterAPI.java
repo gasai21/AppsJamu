@@ -29,4 +29,8 @@ public interface RegisteterAPI {
 
     @GET("viewlistartikel.php")
     Call<Value> viewartikel();
+
+    @FormUrlEncoded
+    @POST("delete.php")
+    Call<Value> delete(@Field("id") String id);
 }

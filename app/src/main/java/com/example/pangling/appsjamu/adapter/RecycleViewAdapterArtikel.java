@@ -41,7 +41,8 @@ public class RecycleViewAdapterArtikel extends RecyclerView.Adapter<RecycleViewA
     @Override
     public void onBindViewHolder(RecycleViewAdapterArtikel.ViewHolder holder, int position) {
         ListArtikel ar = artikels.get(position);
-        holder.isi.setText(ar.getJudul());
+        holder.judul.setText(ar.getJudul());
+        holder.isi.setText(ar.getKonten());
         Picasso.with(context).load(ar.getGambar()).into(bg);
         konten = ar.getKonten();
         gambar = ar.getGambar();
@@ -53,10 +54,11 @@ public class RecycleViewAdapterArtikel extends RecyclerView.Adapter<RecycleViewA
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        TextView isi;
+        TextView judul,isi;
         //public ImageView gb;
         public ViewHolder(View view){
             super(view);
+            judul = (TextView) view.findViewById(R.id.tvJudullva);
             isi = (TextView) view.findViewById(R.id.tvDeskripsi);
             bg = (ImageView) view.findViewById(R.id.imageView);
             itemView.setOnClickListener(this);
@@ -64,8 +66,8 @@ public class RecycleViewAdapterArtikel extends RecyclerView.Adapter<RecycleViewA
 
         @Override
         public void onClick(View view) {
-            String judul2 = isi.getText().toString();
-            String konten2 = konten;
+            String judul2 = judul.getText().toString();
+            String konten2 = isi.getText().toString();
             String gambar2 = gambar;
 
             Toast.makeText(view.getContext(),konten2,Toast.LENGTH_SHORT).show();

@@ -27,9 +27,17 @@
                     android:layout_height="wrap_content"
                     android:text="Date on "
                     android:layout_marginLeft="10pt"
-                    android:id="@+id/tvDeskripsi"
+                    android:id="@+id/tvJudullva"
                     android:textColor="@android:color/black" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date on "
+                    android:layout_marginLeft="10pt"
+                    android:id="@+id/tvDeskripsi"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/black" />
             </TableRow>
         </TableLayout>
 

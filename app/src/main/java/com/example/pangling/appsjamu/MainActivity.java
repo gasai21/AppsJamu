@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     public EditText user,pss;
     public Button login;
-    public String URL ="http://192.168.1.14/jamu/";
+    URL link = new URL();
+    public String URL =link.url;
     public static String ambilId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

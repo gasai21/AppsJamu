@@ -23,7 +23,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ArtikelActivity extends AppCompatActivity {
 
-    public String URL ="http://192.168.1.14/jamu/";
+    URL link = new URL();
+    public String URL =link.url;
     List<ListArtikel> artikels = new ArrayList<>();
     RecyclerView recyclerView;
     RecycleViewAdapterArtikel recycleViewAdapterArtikel;

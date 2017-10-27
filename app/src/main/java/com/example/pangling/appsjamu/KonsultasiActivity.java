@@ -33,7 +33,8 @@ public class KonsultasiActivity extends AppCompatActivity {
     public static List<String> datakonsul = new ArrayList<>();
     String hasilkonsul;
     String coba="";
-    public String URL ="http://192.168.1.14/jamu/";
+    URL link = new URL();
+    public String URL =link.url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,16 +60,80 @@ public class KonsultasiActivity extends AppCompatActivity {
                 //menyeleksi data
                 String kamu = bahan.getSelectedItem().toString();
 
-                if(kamu.equals("Pegal - Pegal")){
-                    hasilkonsul = "Obat Pegal pegal adalah Beras kencur";
+                if(kamu.equals("Menambah nafsu makan")){
+                    hasilkonsul = "Jamu Menambah nafsu makan adalah Beras kencur";
                     datakonsul.add(hasilkonsul);
                     coba += kamu + " & ";
-                }else if(kamu.equals("Menambah Nafsu Makan")){
-                    hasilkonsul = "Obat Menambah Nafsu Makan adalah Beras kencur";
+                }else if(kamu.equals("Menghilangkan pegal linu")){
+                    hasilkonsul = "Jamu menghilangkan pegal linu adalah Beras kencur";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Meningkatkan stamina")){
+                    hasilkonsul = "Jamu Meningkatkan stamina adalah Beras kencur";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Sakit perut karena datang bulan")){
+                    hasilkonsul = "Jamu Sakit perut karena datang bulan adalah Kunyit Asam";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Mencerahkan kulit")){
+                    hasilkonsul = "Jamu Mencerahkan kulit adalah Kunyit Asam";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Peradangan lambung")){
+                    hasilkonsul = "Jamu Peradangan lambung adalah Sinom";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Maag")){
+                    hasilkonsul = "Jamu Maag adalah Sinom";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Sakit pinggang")){
+                    hasilkonsul = "Jamu Sakit pinggang adalah Cabe Puyang";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Kesemutan")){
+                    hasilkonsul = "Jamu Kesemutan adalah Cabe Puyang";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Mencegah diabetes")){
+                    hasilkonsul = "Jamu Mencegah diabetes adalah Pahitan";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Terapi cuci darah")){
+                    hasilkonsul = "Jamu Terapi Cuci darah adalah Pahitan";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Meningkatkan produk ASI")){
+                    hasilkonsul = "Jamu Meningkatkan produk ASI adalah uyup-uyup";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Menghilangkan bau badan")){
+                    hasilkonsul = "Jamu Menghilangkan bau badan adalah uyup-uyup";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Menghilangkan kembung")){
+                    hasilkonsul = "Jamu Menghilangkan kembung adalah uyup-uyup";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Meredakan demam")){
+                    hasilkonsul = "Jamu Meredakan demam adalah Kudu Laos";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Pusing")){
+                    hasilkonsul = "Jamu pusing adalah Temulawak";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Mual")){
+                    hasilkonsul = "Jamu Mual adalah Temulawak";
+                    datakonsul.add(hasilkonsul);
+                    coba += kamu + " & ";
+                }else if(kamu.equals("Gejala masuk angin")){
+                    hasilkonsul = "Jamu Gejala masuk angin adalah Temulawak";
                     datakonsul.add(hasilkonsul);
                     coba += kamu + " & ";
                 }else {
-                    hasilkonsul = "Obat Sakit Perut adalah Beras kencur";
+                    hasilkonsul = "Jamu Menghilangkan jerawat adalah Pahitan";
                     datakonsul.add(hasilkonsul);
                     coba += kamu + " & ";
                 }

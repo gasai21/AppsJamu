@@ -25,7 +25,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class HistoryActivity extends AppCompatActivity {
 
-    public String URL ="http://192.168.1.14/jamu/";
+    URL link = new URL();
+    public String URL =link.url;
     private List<Bekas> bekases = new ArrayList<>();
     private RecycleViewAdapterHistory viewAdapter;
     @BindView(R.id.recyclerview)RecyclerView recyclerView;
@@ -41,6 +42,8 @@ public class HistoryActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(viewAdapter);
         LoadData();
+
+
     }
 
     @Override

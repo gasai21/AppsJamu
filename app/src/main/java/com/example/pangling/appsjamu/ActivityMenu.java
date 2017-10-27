@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class ActivityMenu extends AppCompatActivity {
 
@@ -66,6 +65,8 @@ public class ActivityMenu extends AppCompatActivity {
     }
 
     public void logout(){
-        Toast.makeText(getApplicationContext(),"Ciee",Toast.LENGTH_SHORT).show();
+        it = new Intent(ActivityMenu.this,MainActivity.class);
+        startActivity(it);
+        finish();
     }
 }
