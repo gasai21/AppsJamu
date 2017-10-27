@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppsJamu</string>
+    //ini untuk logout
+    <string name="action_settings">Logout</string>
+
+    //ini untuk combobox
+    <string-array name="array_name">
+        <item>Pegal - Pegal</item>
+        <item>Menambah Nafsu Makan</item>
+        <item>Sakit Perut</item>
+    </string-array>
+</resources>
